@@ -1,0 +1,34 @@
+/* L = left distance sensor;
+ * R = right distance sensor;
+ * U = up distance sensor
+ * D = down distance sensor
+ */
+ 
+// Finding Current (x, y) Location (origin at up left corner)
+final double TOTAL = ;
+double x;
+if (L <= R) x = L;
+else x = TOTAL - R;
+double y;
+if (U <= D) y = U;
+else y = TOTAL - D;
+telemetry.addData("Position", "(" + x + ", " + y + ")");
+
+// Storing Target Location
+final double TARGETx;
+final double TARGETy;
+final double TARGETz;
+/* high goal */ 
+if (y1) {
+  TARGETx = ;
+  TARGETy = 0;
+  TARGETz = ;
+/* far right power shot */
+} else if (x1) {
+  TARGETx = ;
+  TARGETy = 0;
+  TARGETz = ;
+} 
+telemetry.addData("Target", "(" + TARGETx + ", " + TARGETy + ", " + TARGETz + ")");
+
+// Find Polar Coordinates & Shift Angle Accordingly
