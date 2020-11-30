@@ -43,5 +43,9 @@ if (leftx1 <=0 && lefty1 >= 0 )  {
 // AM rotate theta degrees
 
 // Align to Target Height (TARGETz)
-double hyp = Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2));
-/* option one: speed adjustment */
+double hyp = Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2);
+final double optimalDistance = ; // for .8 speed
+/* option one: flywheel speed adjustment */
+flywheel.setPower(hyp/optimalDistance * .8)
+/* option two: distance adjustment */
+// AM drive hyp - optimal distance meters
