@@ -33,3 +33,10 @@ telemetry.addData("Target", "(" + TARGETx + ", " + TARGETy + ", " + TARGETz + ")
 
 // Find Polar Coordinates & Shift Angle Accordingly
 double relativex = TARGETx - x;
+double theta;
+if (leftx1 <=0 && lefty1 >= 0 )  {
+  theta = Math.atan(Math.abs(leftx1)/Math.abs(lefty1));
+  theta += (Math.PI/2);
+} else {
+  theta = Math.atan(Math.abs(lefty1)/Math.abs(leftx1));
+}
